@@ -1,0 +1,89 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box
+}
+
+/* colors 
+oklch(45.7% 0.24 277.023)
+
+
+
+*/
+
+.accordions 
+{
+     width: 700px;
+     margin: 48px auto;
+     font-family: 'Poppins';
+     color: oklch(20.8% 0.042 265.755);
+     display: flex;
+     flex-direction: column;
+     gap: 24px;
+
+}
+
+.item {
+     box-shadow: 0 0 32px rgb(0, 0, 0, 0.1);
+     padding: 24px;
+     display: grid;
+     grid-template-columns: auto 1fr auto;
+     column-gap: 32px;
+     align-items: center;
+}
+
+.open {
+     border-top: 4px solid oklch(58.5% 0.233 277.117);
+}
+
+.number {
+     width:24px;
+     height: 24px;
+     color: oklch(55.4% 0.046 257.417);
+}
+.icon {
+     width:24px;
+     height: 24px;
+     stroke: oklch(55.4% 0.046 257.417);
+} 
+
+.open .number , .open .text {
+     color: oklch(58.5% 0.233 277.117);
+     font-size: 18px;
+     font-weight: 600;
+}
+
+
+.open .icon {
+     width:24px;
+     height: 24px;
+     stroke: oklch(58.5% 0.233 277.117);
+}
+
+.hidden-box {
+     grid-column: 2;
+     display: none;
+}
+
+.hidden-box p{
+     line-height: 1.6;
+     margin-bottom: 24px;
+}
+
+.hidden-box ul {
+     color: oklch(44.6% 0.043 257.281);
+     display: flex;
+     flex-direction: column;
+     column-gap: 16px;
+     
+}
+
+.hidden-box li {
+     list-style-position: inside;   
+}
+
+.open .hidden-box {
+     display: block;
+     margin-top: 12px;
+    
+}
